@@ -29,12 +29,20 @@
                         <div class="col-12 shadow p-3">
                             <h3 class="p-2">Cadastro de Usuários</h3>
                                 
+<<<<<<< HEAD
                                 <?php echo form_open('user/create_update'); ?>
+=======
+                                <?php echo form_open('user/create'); ?>
+>>>>>>> a0f176d62566a82452b6fc6c832f08fd42f425e5
                                     <div class="row">
 
                                         <div class="col-lg-6 form-group">
                                             <label for="">Nome</label>
+<<<<<<< HEAD
                                             <input type="text" class="form-control" name="nome" value="" >
+=======
+                                            <input type="text" class="form-control" name="nome"  >
+>>>>>>> a0f176d62566a82452b6fc6c832f08fd42f425e5
                                         </div>
                                         <div class="col-lg-6 form-group">
                                             <label for="">Email</label>
