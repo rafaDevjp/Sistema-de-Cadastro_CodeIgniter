@@ -9,7 +9,7 @@ class Migration_Create_blog extends CI_Migration {
                 $this->dbforge->add_field(array(
                         'id' => array(
                                 'type' => 'INT',
-                                'constraint' => 5,
+                                'constraint' => 12,
                                 'unsigned' => TRUE,
                                 'auto_increment' => TRUE
                         ),

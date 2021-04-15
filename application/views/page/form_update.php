@@ -20,7 +20,7 @@
                         <a href=""><i class="fa fa-search fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-group-item bg-dark p-3">
-                        <a href="<?php echo site_url('geral') ?>"><i class="fa fa-sign-out fa-2x text-light" aria-hidden="true"></i></a>
+                        <a href="<?php echo site_url('geral/home') ?>"><i class="fa fa-sign-out fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             
@@ -31,8 +31,6 @@
                                 
 
                                 <?php echo form_open('user/create_update'); ?>
-=======
-                                <?php echo form_open('user/create'); ?>
 
                                     <div class="row">
 
