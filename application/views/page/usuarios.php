@@ -47,7 +47,7 @@
                                         <td><?php echo $usuario['at_data']?></td>
                                         <td>
                                             <a href="<?php echo site_url('user/update_usuario/' . $usuario['id'])?>" class="p-2 m-2"><i class="fa fa-pencil text-info" aria-hidden="true"></i></a>
-                                            <a href="<?php echo site_url('user/deletar_usuario/' . $usuario['id'])?>" class="p-2 m-2"><i class="fa fa-trash-o text-danger" aria-hidden="true"></i></a>
+                                            <a href="<?php echo site_url('user/delete/' . $usuario['id'])?>" class="p-2 m-2"><i class="fa fa-trash-o text-danger" aria-hidden="true"></i></a>
                                         </td>
                                     </tr>
                                 <? endforeach;?>
