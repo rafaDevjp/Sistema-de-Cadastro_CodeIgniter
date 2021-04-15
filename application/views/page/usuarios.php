@@ -7,7 +7,7 @@
    
     <div class="container-fluid ">
         <div class="row">
-            <div class=" bg-dark" style="min-height: 720px;">
+            <div class=" bg-dark" style="min-height: 100vh;">
 
                 <ul class="list-group list-group-flush text-center">
                     <li class="list-group-item bg-dark p-3">
