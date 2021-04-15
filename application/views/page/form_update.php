@@ -20,7 +20,7 @@
                         <a href=""><i class="fa fa-search fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-group-item bg-dark p-3">
-                        <a href="<?php echo site_url('geral') ?>"><i class="fa fa-sign-out fa-2x text-light" aria-hidden="true"></i></a>
+                        <a href="<?php echo site_url('geral/home') ?>"><i class="fa fa-sign-out fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             
@@ -29,12 +29,17 @@
                         <div class="col-12 shadow p-3">
                             <h3 class="p-2">Cadastro de Usuários</h3>
                                 
-                                <?php echo form_open('user/create'); ?>
+
+                                <?php echo form_open('user/create_update'); ?>
+
                                     <div class="row">
 
                                         <div class="col-lg-6 form-group">
                                             <label for="">Nome</label>
+
+
                                             <input type="text" class="form-control" name="nome"  >
+
                                         </div>
                                         <div class="col-lg-6 form-group">
                                             <label for="">Email</label>
