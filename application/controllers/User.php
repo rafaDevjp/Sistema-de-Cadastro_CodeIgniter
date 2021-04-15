@@ -65,10 +65,11 @@ class User extends CI_Controller {
 
     public function update_usuario($id){
 
-         $this->load->helper(array('form'));
+        $this->load->helper(array('form'));
         $this->load->library('form_validation');
-
-        $data['dados']=  $this->db->get_where('usuarios_table' , array('id' => $id ))->result_array();
+        
+        $this->load->model('usuarios_model');
+        $data['dados'] = $this->usuarios_model->id_update($id);
        
         $this->load->view('template/header');
         $this->load->view('template/navbar');
@@ -78,9 +79,10 @@ class User extends CI_Controller {
         
     }
 
-    public function create_update(){
+    public function create_update($id){
         $this->load->helper(array('form'));
         $this->load->library('form_validation');
+
             //validação dos campos de Formulário
             $data_form = array(
                 array(
@@ -110,13 +112,13 @@ class User extends CI_Controller {
             //   $this->cadastro();
             }
             else{
-            //   $this->load->model('usuarios_model');
-            //   $this->usuarios_model->create_model();
-               $this->usuarios();
+              $this->load->model('usuarios_model');
+              $this->usuarios_model->update_model($id);
+              $this->usuarios();
             }
 	}
 
-    public function delete($id){
+        public function delete($id){
         $this->load->model('usuarios_model');
         $this->usuarios_model->delete_model($id);
         $this->usuarios();
