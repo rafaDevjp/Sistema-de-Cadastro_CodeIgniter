@@ -7,7 +7,7 @@
    
     <div class="container-fluid ">
         <div class="row">
-            <div class=" bg-dark" style="min-height: 720px;">
+            <div class=" bg-dark" style="min-height: 100vh;">
             
                 <ul class="list-group list-group-flush text-center">
                     <li class="list-group-item bg-dark p-3">
@@ -29,16 +29,16 @@
                         <div class="col-12 shadow p-3">
                             <h3 class="p-2">Cadastro de Usuários</h3>
                                 
-                                <?php echo form_open('user/create'); ?>
+                                <?php echo form_open('user/create') ?>
                                     <div class="row">
 
                                         <div class="col-lg-6 form-group">
                                             <label for="">Nome</label>
-                                            <input type="text" class="form-control" name="nome" value="" >
+                                            <input type="text" class="form-control" name="nome"  >
                                         </div>
                                         <div class="col-lg-6 form-group">
                                             <label for="">Email</label>
-                                            <input type="email" class="form-control" name="email" value="" >
+                                            <input type="email" class="form-control" name="email"  >
                                         </div>
                                         <div class="col-lg-6 form-group">
                                             <label for="">Senha</label>
@@ -60,4 +60,4 @@
                 </div>
         </div>
     </div>
-</section>nome
+</section>
