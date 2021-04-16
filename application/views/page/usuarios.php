@@ -6,7 +6,8 @@
 <section>
    
     <div class="container-fluid ">
-        <div class="row ">
+        <div class="row">
+
             <div class=" bg-dark" style="min-height: 100vh;">
 
                 <ul class="list-group list-group-flush text-center">

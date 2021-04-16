@@ -23,14 +23,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             );
 
             $this->db->insert('usuarios_table', $data_form);
-             echo "Cadastrado no DB com Sucesso!!!!!" ;
+            
         }
 
-        // public function update_model($id){
+        public function id_update($id){
 
-        //     $result =  $this->db->get_where('usuarios_table' , array('id' => $id ))->result_array();
-        //     return $result;
-        // }
+            $result = $this->db->from('usuarios_table')
+                               ->where('id', $id)
+                               ->get()
+                               ->result_array();
+             return $result;
+        }
+
+        public function update_model($id){
+
+           $arrayData = array(
+            $nome =  $this->input->post('nome'),
+            $email =  $this->input->post('email'),
+            $senha =  md5($this->input->post('senha_1'))
+           );
+            
+            $this->db->where('id',  $id )
+                     ->set('nome', $nome)
+                     ->set('email', $email)
+                     ->set('email', $email)
+                     ->update('usuarios_table');
+           
+            
+        }
 
          public function delete_model($id){
 

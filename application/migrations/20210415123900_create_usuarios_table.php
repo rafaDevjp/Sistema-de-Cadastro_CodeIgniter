@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Migration_Create_blog extends CI_Migration {
+class Migration_Create_Usuarios_table extends CI_Migration {
 
         public function up()
         {
@@ -24,15 +24,23 @@ class Migration_Create_blog extends CI_Migration {
                         'senha' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => '50',
+                        ),
+                        'at_data' => array(
+                                'type' => 'timestamp',
+                                'current_timestamp' => TRUE,
+                        ),
+                        'at_update' => array(
+                                'type' => 'timestamp',
+                                 'on_update current_timestamp' => TRUE
                         )
                 ));
 
                 $this->dbforge->add_key('id', TRUE);
-                $this->dbforge->create_table('usuarios_table');
+                $this->dbforge->create_table('usuarios');
         }
 
         public function down()
         {
-                $this->dbforge->drop_table('usuarios_table');
+                $this->dbforge->drop_table('usuarios');
         }
 }
