@@ -28,8 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         public function id_update($id){
 
-            $result = $this->db->select('*')
-                               ->from('usuarios_table')
+            $result = $this->db->from('usuarios_table')
                                ->where('id', $id)
                                ->get()
                                ->result_array();
@@ -38,15 +37,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         public function update_model($id){
 
+           $arrayData = array(
+            $nome =  $this->input->post('nome'),
+            $email =  $this->input->post('email'),
+            $senha =  md5($this->input->post('senha_1'))
+           );
+            
+            $this->db->where('id',  $id )
+                     ->set('nome', $nome)
+                     ->set('email', $email)
+                     ->set('email', $email)
+                     ->update('usuarios_table');
            
-             $this->input->post('nome');
-             $this->input->post('email');
-             md5($this->input->post('senha_1'));
-            
-            
-            $this->db->where('id', $id);
-            $this->db->update('usuarios_table', $this);
-            echo $id;
             
         }
 

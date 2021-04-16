@@ -13,7 +13,7 @@
                         <a href="<?php echo site_url('user/usuarios') ?>"><i class="fa fa-users fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-group-item bg-dark p-3">
-                        <a href="<?php echo site_url('user/create') ?>"><i class="fa fa-user-plus fa-2x text-warning" aria-hidden="true"></i></a>
+                        <a href="<?php echo site_url('user/create') ?>"><i class="fa fa-user-plus fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-group-item bg-dark p-3">
                         <a href=""><i class="fa fa-search fa-2x text-light" aria-hidden="true"></i></a>
@@ -25,28 +25,16 @@
             </div>
                 <div class="col-11 p-5 text-secondary">
                         <div class="col-12 shadow p-3">
-<<<<<<< HEAD
-                            <h3 class="p-2">Cadastro de Usuários</h3>
-                                
 
-                                <?php echo form_open('user/create_update'); ?>
-
-=======
                             <h3 class="p-2">Atualizar de Usuários</h3>
                             <?php foreach($dados as $dado ):?>
-                                <?php echo form_open('user/create/' . $dado['id'] ); ?>
->>>>>>> e30d9ae1db603d632af968785fd68b617cc02149
+                                <?php echo form_open('user/create_update/' . $dado['id'] ); ?>
+
                                     <div class="row">
                                         <div class="col-lg-6 form-group">
                                             <label for="">Nome</label>
-<<<<<<< HEAD
+                                      <input type="text" class="form-control" name="nome" value="<?php echo $dado['nome'] ?>"   >
 
-
-                                            <input type="text" class="form-control" name="nome"  >
-
-=======
-                                            <input type="text" class="form-control" name="nome" value="<?php echo $dado['nome'] ?>"   >
->>>>>>> e30d9ae1db603d632af968785fd68b617cc02149
                                         </div>
                                         <div class="col-lg-6 form-group">
                                             <label for="">Email</label>

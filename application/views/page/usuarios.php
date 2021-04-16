@@ -6,11 +6,8 @@
 <section>
    
     <div class="container-fluid ">
-<<<<<<< HEAD
-        <div class="row ">
-=======
         <div class="row">
->>>>>>> e30d9ae1db603d632af968785fd68b617cc02149
+
             <div class=" bg-dark" style="min-height: 100vh;">
 
                 <ul class="list-group list-group-flush text-center">
