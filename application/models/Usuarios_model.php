@@ -9,8 +9,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         public function show_usuarios(){
 
-            $result = $this->db->select('*')->from('usuarios_table')->get()->result_array();
+            $result = $this->db->get('usuarios_table')->result_array();
             return $result;
+        }
+
+        public function buscar($busca){
+            if(empty($busca))
+       		return array();
+
+		$busca = $this->input->post('buscar');
+
+		$this->db->like('nome', $busca)->or_like('email', $busca);
+		$query = $this->db->get('usuarios_table');
+		return $query->result_array();
         }
 
         public function create_model(){

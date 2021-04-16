@@ -15,6 +15,16 @@ class User extends CI_Controller {
 	       
 	}
 
+    public function resultado_busca(){
+        $this->load->model('usuarios_model');
+        $data['dados'] = $this->usuarios_model->buscar($_POST);
+        $this->load->view('template/header');
+        $this->load->view('template/navbar');
+        $this->load->view('page/resultado', $data);
+        $this->load->view('template/footer');
+        
+    }
+
     public function cadastro(){
         $this->load->helper(array('form'));
         $this->load->library('form_validation');

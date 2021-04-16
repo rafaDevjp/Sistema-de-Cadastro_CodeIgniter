@@ -27,6 +27,11 @@
             
             </div>
                 <div class="col-11 p-5 text-secondary  justify-content-center">
+       
+                <form action="<?php echo site_url('user/resultado_busca')?>" method="post" class="form-inline my-2 my-lg-0 pb-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" name="buscar" aria-label="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                </form>
                         <div class="col-12 shadow p-3 ">
                             <h3 class="p-2">Lista de usuários</h3>
                             <table class="table  table-hover text-secondary">
