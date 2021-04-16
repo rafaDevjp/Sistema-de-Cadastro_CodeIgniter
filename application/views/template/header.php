@@ -17,4 +17,7 @@
     <title>Cadastro de Usuários</title>
 </head>
 <body>
-    
+
+<script>
+  $('.toast').toast(option)
+</script>

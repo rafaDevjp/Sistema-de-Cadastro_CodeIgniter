@@ -7,7 +7,6 @@ class User extends CI_Controller {
 	public function usuarios(){
         $this->load->model('usuarios_model');
         $data['dados'] = $this->usuarios_model->show_usuarios();
-
         $this->load->view('template/header');
         $this->load->view('template/navbar');
         $this->load->view('page/usuarios', $data);
@@ -67,9 +66,18 @@ class User extends CI_Controller {
               $this->cadastro();
             }
             else{
-              $this->load->model('usuarios_model');
-              $this->usuarios_model->create_model();
-               $this->usuarios();
+
+                $this->load->model('usuarios_model');
+                $this->usuarios_model->create_model();
+
+                $this->load->model('usuarios_model');
+                $data['dados'] = $this->usuarios_model->show_usuarios();
+                $this->load->view('template/header');
+                $this->load->view('template/navbar');
+                $this->load->view('page/usuarios', $data);
+                $this->load->view('template/footer');
+                
+
             }
 	}
 
@@ -119,7 +127,7 @@ class User extends CI_Controller {
             $this->form_validation->set_rules($data_form);
 
             if ($this->form_validation->run() == FALSE){
-            //   $this->cadastro();
+                    $this->update_usuario($id);
             }
             else{
               $this->load->model('usuarios_model');

@@ -18,7 +18,7 @@
                         <a href="<?php echo site_url('user/cadastro') ?>"><i class="fa fa-user-plus fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-group-item bg-dark p-3">
-                        <a href=""><i class="fa fa-search fa-2x text-light" aria-hidden="true"></i></a>
+                    <a href="<?php echo site_url('user/resultado_busca') ?>"><i class="fa fa-search fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-group-item bg-dark p-3">
                         <a href="<?php echo site_url('geral/home') ?>"><i class="fa fa-sign-out fa-2x text-light" aria-hidden="true"></i></a>
@@ -27,10 +27,12 @@
             
             </div>
                 <div class="col-11 p-5 text-secondary  justify-content-center">
+                  
+                    
        
                 <form action="<?php echo site_url('user/resultado_busca')?>" method="post" class="form-inline my-2 my-lg-0 pb-3">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" name="buscar" aria-label="Search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Ex. nome ou email" name="buscar" aria-label="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar Usuário</button>
                 </form>
                         <div class="col-12 shadow p-3 ">
                             <h3 class="p-2">Lista de usuários</h3>

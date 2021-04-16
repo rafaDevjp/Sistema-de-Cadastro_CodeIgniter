@@ -59,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      ->set('email', $email)
                      ->set('email', $email)
                      ->update('usuarios_table');
-           
+          
             
         }
 

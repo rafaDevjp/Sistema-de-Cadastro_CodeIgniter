@@ -16,7 +16,7 @@
                         <a href="<?php echo site_url('user/create') ?>"><i class="fa fa-user-plus fa-2x text-warning" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-group-item bg-dark p-3">
-                        <a href=""><i class="fa fa-search fa-2x text-light" aria-hidden="true"></i></a>
+                    <a href="<?php echo site_url('user/resultado_busca') ?>"><i class="fa fa-search fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-group-item bg-dark p-3">
                         <a href="<?php echo site_url('geral/home') ?>"><i class="fa fa-sign-out fa-2x text-light" aria-hidden="true"></i></a>
@@ -48,10 +48,35 @@
                                             <input type="password" class="form-control" name="senha_2"  >
                                         </div>
                                         <div class="col-12 form-group pt-2">
-                                          
                                             <input type="submit" class="btn btn-info" value="Cadastrar novo Usuário" >
                                         </div>
-                                        <span class="text-danger"><?php echo validation_errors(); ?></span>
+
+                                        <?php if (validation_errors() ) :?>
+                                            <div class="alert alert-danger" role="alert">   
+                                                <span class="text-danger"><?php echo validation_errors(); ?></span>
+                                            </div>
+
+                                            <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="height: 200px;">
+
+                                            <!-- Then put toasts within -->
+                                            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="toast-header">
+                                                <img src="..." class="rounded mr-2" alt="...">
+                                                <strong class="mr-auto">Bootstrap</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="toast-body">
+                                                Hello, world! This is a toast message.
+                                                </div>
+                                            </div>
+                                            </div>
+                                            
+                                        <?php endif;?>
+
+                                        
                                     </div>
                                 </form>
                             

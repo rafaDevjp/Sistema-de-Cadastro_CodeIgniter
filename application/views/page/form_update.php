@@ -16,7 +16,7 @@
                         <a href="<?php echo site_url('user/create') ?>"><i class="fa fa-user-plus fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-group-item bg-dark p-3">
-                        <a href=""><i class="fa fa-search fa-2x text-light" aria-hidden="true"></i></a>
+                        <a href="<?php echo site_url('user/resultado_busca') ?>"><i class="fa fa-search fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-group-item bg-dark p-3">
                         <a href="<?php echo site_url('geral/home') ?>"><i class="fa fa-sign-out fa-2x text-light" aria-hidden="true"></i></a>
@@ -52,7 +52,12 @@
                                         <div class="col-12 form-group pt-2">
                                             <input type="submit" class="btn btn-info" value="Cadastrar novo Usuário" >
                                         </div>
-                                        <span class="text-danger"><?php echo validation_errors(); ?></span>
+                                        
+                                        <?php if (validation_errors() ) :?>
+                                            <div class="alert alert-danger" role="alert">   
+                                                <span class="text-danger"><?php echo validation_errors(); ?></span>
+                                            </div>
+                                        <?php endif;?>
                                     </div>
                                     <?php echo form_close() ?>
                                 <?php endforeach; ?>
