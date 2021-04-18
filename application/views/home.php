@@ -3,8 +3,23 @@
  
  ?> 
 
- <section style="height: 100vh" class="container-fluid bg-light d-flex align-items-center justify-content-center" >
-      <div class="text-center ">
-        <a class="btn btn-info btn-lg " href="<?php echo site_url('user/usuarios') ?>">Clique Aqui</a>
+ <section class="bg-banner   " >
+
+      <div class="container-fluid ">
+          <div class="row justify-content-around shadow-sm">
+              <div class="d-flex align-self-center">
+                <h3 class="text-info text-end">UserData.com</h3>
+              </div>
+              <div class="text-center col-lg-3 p-3">
+                <a class="btn btn-outline-info col-lg-4 " href="<?php echo site_url('user/usuarios') ?>">Entar</a>
+              </div>
+          </div>
       </div>
+
+
+
+
+
+
+      
  </section>

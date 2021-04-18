@@ -27,7 +27,6 @@ class User extends CI_Controller {
     public function cadastro(){
         $this->load->helper(array('form'));
         $this->load->library('form_validation');
-
         $this->load->view('template/header');
         $this->load->view('template/navbar');
         $this->load->view('page/cadastro');
@@ -69,11 +68,11 @@ class User extends CI_Controller {
 
                 $this->load->model('usuarios_model');
                 $this->usuarios_model->create_model();
-
                 $this->load->model('usuarios_model');
                 $data['dados'] = $this->usuarios_model->show_usuarios();
                 $this->load->view('template/header');
                 $this->load->view('template/navbar');
+                $this->load->view('menssage/save_success');
                 $this->load->view('page/usuarios', $data);
                 $this->load->view('template/footer');
                 
@@ -88,7 +87,6 @@ class User extends CI_Controller {
         
         $this->load->model('usuarios_model');
         $data['dados'] = $this->usuarios_model->id_update($id);
-       
         $this->load->view('template/header');
         $this->load->view('template/navbar');
         $this->load->view('page/form_update', $data);
@@ -132,14 +130,29 @@ class User extends CI_Controller {
             else{
               $this->load->model('usuarios_model');
               $this->usuarios_model->update_model($id);
-              $this->usuarios();
+                
+                $this->load->model('usuarios_model');
+                $data['dados'] = $this->usuarios_model->show_usuarios();
+                 $feedBack = ['feed' => TRUE];
+                $this->load->view('template/header');
+                $this->load->view('template/navbar');
+                $this->load->view('menssage/update_success');
+                $this->load->view('page/usuarios', $data, $feedBack);
+                $this->load->view('template/footer');
             }
 	}
 
         public function delete($id){
         $this->load->model('usuarios_model');
         $this->usuarios_model->delete_model($id);
-        $this->usuarios();
+        
+        $this->load->model('usuarios_model');
+        $data['dados'] = $this->usuarios_model->show_usuarios();
+        $this->load->view('template/header');
+        $this->load->view('template/navbar');
+        $this->load->view('menssage/delete_success');
+        $this->load->view('page/usuarios', $data);
+        $this->load->view('template/footer');
 
         }
 

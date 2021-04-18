@@ -6,6 +6,7 @@
 <section>
    
     <div class="container-fluid ">
+     
         <div class="row">
 
             <div class=" bg-dark" style="min-height: 100vh;">
@@ -27,7 +28,15 @@
             
             </div>
                 <div class="col-11 p-5 text-secondary  justify-content-center">
-                  
+                <!-- <?php if($feedback['feed']=== true) :?>
+                   <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                    
+
+                    
+                <?php endif;?> -->
                     
        
                 <form action="<?php echo site_url('user/resultado_busca')?>" method="post" class="form-inline my-2 my-lg-0 pb-3">

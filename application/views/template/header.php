@@ -19,5 +19,5 @@
 <body>
 
 <script>
-  $('.toast').toast(option)
+  $('.toast').toast(show)
 </script>

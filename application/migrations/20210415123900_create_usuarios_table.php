@@ -26,11 +26,11 @@ class Migration_Create_Usuarios_table extends CI_Migration {
                                 'constraint' => '50',
                         ),
                         'at_data' => array(
-                                'type' => 'timestamp',
+                                'type' => 'DATETIME',
                                 'current_timestamp' => TRUE,
                         ),
                         'at_update' => array(
-                                'type' => 'timestamp',
+                                'type' => 'DATETIME',
                                  'on_update current_timestamp' => TRUE
                         )
                 ));
