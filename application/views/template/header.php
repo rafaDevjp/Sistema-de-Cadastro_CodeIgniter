@@ -1,5 +1,9 @@
  <?php
    defined('BASEPATH') OR exit('No direct script access allowed');
+
+      //Esta é a page HEADER, esta faz parte da estrutura do HTML de todas as pages do sistema
+      //Nela esta inserida todas as CDNS e arquivos correpondentes ao CSS do sistema, como  Fonte Awesome e os arquivos Style.css e bootstrap.min.css 
+
  ?> 
 <!DOCTYPE html>
 <html lang="pt-br">

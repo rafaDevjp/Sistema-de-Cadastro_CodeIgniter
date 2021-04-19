@@ -1,5 +1,8 @@
  <?php
    defined('BASEPATH') OR exit('No direct script access allowed');
+
+   //Este Arquivo faz parte da Estruturação HTML de todo o sistema
+   //Ele tambem tráz os link de ecript dos aquivos do Jquery JS e Bootstrap 
  
  ?> 
 
