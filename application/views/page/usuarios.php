@@ -52,6 +52,7 @@
                                         <th scope="col">Nome</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">DataCadastro</th>
+                                        <th scope="col">UltimoUpdate</th>
                                         <th scope="col">Ações</th>
                                     </tr>
                                 </thead>
@@ -62,6 +63,7 @@
                                         <td><?php echo $usuario['nome']?></td>
                                         <td><?php echo $usuario['email']?></td>
                                         <td><?php echo $usuario['at_data']?></td>
+                                        <td><?php echo $usuario['at_update']?></td>
                                         <td>
                                             <a href="<?php echo site_url('user/update_usuario/' . $usuario['id'])?>" class="p-2 m-2"><i class="fa fa-pencil text-info" aria-hidden="true"></i></a>
                                             <a href="<?php echo site_url('user/delete/' . $usuario['id'])?>" class="p-2 m-2"><i class="fa fa-trash-o text-danger" aria-hidden="true"></i></a>

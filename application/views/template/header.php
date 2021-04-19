@@ -18,6 +18,3 @@
 </head>
 <body>
 
-<script>
-  $('.toast').toast(show)
-</script>
