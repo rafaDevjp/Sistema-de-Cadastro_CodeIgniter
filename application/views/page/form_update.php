@@ -1,13 +1,22 @@
 <?php
    defined('BASEPATH') OR exit('No direct script access allowed');
+
+   //Esta é a page de Fomulario de Edição de usuários aqui nos vamos ver 
+   // um formulario ja preenchido com os dados atuais do usuário cadastrado.
+   //Nesta etapa é possivel que o usuário possa atualizar as informações e 
+   // submete-las novamente ao banco de dados.
+   //Semelhante as outra pages esta página tambem possui um bloco de codigo
+   // representado pela sua SIDEBAR ou menu lateral, para continuar com a
+   // a navegação entra as pages e loog abaixo no segundo bloco contem o formulario.
  
  ?>
 
 <section>
     <div class="container-fluid ">
         <div class="row">
+
+        <!-- Primeiro bloco de codigo referente a SIDEBAR identico as outra pages -->
             <div class=" bg-dark" style="min-height: 100vh;">
-            
                 <ul class="list-group list-group-flush text-center">
                     <li class="list-group-item bg-dark p-3">
                         <a href="<?php echo site_url('user/usuarios') ?>"><i class="fa fa-users fa-2x text-light" aria-hidden="true"></i></a>
@@ -23,6 +32,11 @@
                     </li>
                 </ul>
             </div>
+
+            <!--  -->
+
+
+            <!-- Neste segundo Bloco contem ocodigo do formulario de usuarios com seus valores preenchidos -->
                 <div class="col-11 p-5 text-secondary">
                         <div class="col-12 shadow p-3">
 
@@ -63,6 +77,8 @@
                                 <?php endforeach; ?>
                         </div>
                 </div>
+
+            <!--  -->
         </div>
     </div>
 </section>

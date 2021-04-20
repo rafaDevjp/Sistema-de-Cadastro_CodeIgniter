@@ -1,12 +1,12 @@
 <?php
    defined('BASEPATH') OR exit('No direct script access allowed');
 
-   //Esta pagina é muito semelhante a page usuário, pois ela tabem possui um 
-   // elemeto do tipo SIDEBAR possibilitando o usuario navegar entre outra pages
-   // tambem possui um elemento INPUT Searsh ou busca citado na page usuarios, mas
+   //Esta pagina é muito semelhante a page usuários, pois ela tabem possui um 
+   // elemeto do tipo SIDEBAR possibilitando o usuario navegar entre outras pages
+   // tambem possui um elemento INPUT Searsh ou busca, citado na page usuarios, mas
    // o grande diferencial é relacionado ao dinamismo, já que, a tabela so será alimentada
-   // pelo resultado que virá da busca relacionada ao foi digitado pelo usuário  e ela sera 
-   // procudada no banco de dados
+   // pelo resultado que virá da busca relacionada ao que foi digitado pelo usuário e ela sera 
+   // procudada no banco de dados 
  
  ?>
 
@@ -50,7 +50,7 @@
             <!--  -->
 
 
-            <!-- E aqui esta presente a tabela citada a cima, com um elemento principal e com sua alimentalção dinamica 
+            <!-- E aqui esta presente a tabela citada a cima, como um elemento principal e com sua alimentação dinâmica 
                  totalmente dependente do que o usuario digitar no campo de busca  -->
 
                         <div class="col-12 shadow p-3 ">

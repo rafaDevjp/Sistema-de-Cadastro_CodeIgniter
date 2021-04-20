@@ -2,11 +2,11 @@
    defined('BASEPATH') OR exit('No direct script access allowed');
 
    // Esta é a Página de usuários, ela lista todos os usuarios cadastrados
-   // Ela tem com objetivo mostrar os usuarios cadstrados no banco de dados 
-   // Tambem possui um Menu lateral que possibilita o usuarios navegar no sistema
-   // Outra elemento presente é o Search ou Busca, um campo do tipo INPUT onde o 
+   // Ela tem com objetivo mostrar os usuarios cadastrados no banco de dados 
+   // Tambem possui um Menu lateral que possibilita os usuarios navegar no sistema
+   // Outro elemento presente é o Search ou Busca, um campo do tipo INPUT onde o 
    // o usuario pode digitar um nome e submeter a busca, se encontrado, o usuario
-   // poderar ver em uma lista (TABELA) odado procurado e sues semelhantes
+   // poderar ver em uma lista (TABELA) o item procurado e sues semelhantes
  
  ?>
 
@@ -43,7 +43,8 @@
                 <div class="col-11 p-5 text-secondary  justify-content-center">
           
 
-            <!-- Neste segundo Bloco podemos ver o Codigo do elemento de busca, ele tambem estará presente em outa página  -->
+            <!-- Neste segundo Bloco podemos ver o Codigo do elemento de busca, ele tambem estará presente em outa página
+                 aqui o usuario pode digitar o nome que esta procurando na lista   -->
 
                 <form action="<?php echo site_url('user/resultado_busca')?>" method="post" class="form-inline my-2 my-lg-0 pb-3">
                     <input class="form-control mr-sm-2" type="search" placeholder="Ex. nome ou email" name="buscar" aria-label="Search">
@@ -53,8 +54,8 @@
 
 
             <!--Neste terceiro é último bloco temos o elemento preincipal, a tabela de Usuários
-                aqui será listado todos os usuário cadstrados, tabem será possivel editar ou deletar o usuario 
-                utilizando os botoes no final de cada linha -->
+                aqui será listado todos os usuário cadstrados, tambem será possivel editar ou deletar o usuario 
+                ultilizando os botõe que estão localizado no final de cada linha -->
 
 
                         <div class="col-12 shadow p-3 ">
