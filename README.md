@@ -1,4 +1,5 @@
 #Sistema de Cadastros – CodeIgniter
+
 O sistema de cadastro é uma pequena aplicação muito básica baseada em PHP e implementada com CodeIgniter, (Framework PHP), basicamente a aplicação tem a finalidade de tratar dados de usuários, possibilitando cadastrar, atualizar e deletar as informações salvas em seu banco de dados, na implementação foram utilizadas algumas tecnologias tanto para os layouts (Front-End) como também para as camadas mais baixas do sistema (Back-End).
 Na parte das Views, que corresponde ao Front-End, foram aplicados os estilos da biblioteca de CSS Bootstrap e as bibliotecas de JavaScript, Jquery.
 Na camada mais baixa, que corresponde ao Back-End, o sistema foi todo implementado com a framework CodeIgniter baseado em PHP e MYSQL para guardar e manipular toda as informações salvas.
