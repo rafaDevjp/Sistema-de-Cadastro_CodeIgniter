@@ -21,16 +21,16 @@
                  Este bloco corresponde ao SIDEBAR ou menu lateral, ele tbm estrá presente em todas as outras pages -->
 
                 <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item bg-dark p-3">
+                    <li class="list-group-item bg-dark p-3" title="Página Usuário">
                         <a href="<?php echo site_url('user/usuarios') ?>"><i class="fa fa-users fa-2x  text-light" aria-hidden="true"></i></a>
                     </li>
-                    <li class="list-group-item bg-dark p-3">
+                    <li class="list-group-item bg-dark p-3" title="Página Cadastro">
                         <a href="<?php echo site_url('user/cadastro') ?>"><i class="fa fa-user-plus fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
-                    <li class="list-group-item bg-dark p-3">
+                    <li class="list-group-item bg-dark p-3" title="Página Buscar/resultado">
                     <a href="<?php echo site_url('user/resultado_busca') ?>"><i class="fa fa-search fa-2x text-warning" aria-hidden="true"></i></a>
                     </li>
-                    <li class="list-group-item bg-dark p-3">
+                    <li class="list-group-item bg-dark p-3" title="Sair">
                         <a href="<?php echo site_url('geral/home') ?>"><i class="fa fa-sign-out fa-2x text-light" aria-hidden="true"></i></a>
                     </li>
                 </ul>
