@@ -1,8 +1,30 @@
 
-.bg-banner{
-    background: url('../image/5541.jpg') no-repeat ;
-    background-position: 50% 20%;
+
+@media (max-width: 1920.98px){
+    .bg-banner{
+    background: url('../image/bg_home.jpg') no-repeat ;
+    background-position: 50% 30%;
     background-size: cover;
     height: 100vh;
     max-width: 100%;
+    }
+}
+@media (max-width: 1600.98px){
+    .bg-banner{
+    background: url('../image/bg_home.jpg') no-repeat ;
+    background-position: 50% 47%;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    }
+}
+
+@media (max-width: 1366.98px) { 
+    .bg-banner{
+        background: url('../image/bg_home.jpg') no-repeat ;
+        background-position: 50% 55%;
+        background-size: cover;
+        height: 100vh;
+        max-width: 100%;
+    }
 }

@@ -4,6 +4,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Migration_Create_Usuarios_table extends CI_Migration {
 
+
+
+
+
+        
+        //------------------------------------------------------------//
+        //  Método UP
+        //------------------------------------------------------------//
+        //Este é o método que cria as tabelas no banco de dados com as caracteristicas
+        //Dessa forma é desnecessarios escrever codigos SQL ou utilizar algum set de SQL
+        //Ao carregar o Sistema a tabela será inserida no banco junto com uma tabela
+        //chamada migrations, que contem os regidtros de tabelas criadas 
+        //Classe migrations enfatisa na criação das tabelas no banco de dados
+        //O array abaixo correspondem aos compos da tabela q sera adicionada no banco de dados
         public function up()
         {
                 $this->dbforge->add_field(array(
@@ -39,8 +53,7 @@ class Migration_Create_Usuarios_table extends CI_Migration {
                 $this->dbforge->create_table('usuarios_table');
         }
 
-        public function down()
-        {
+        public function down(){
                 $this->dbforge->drop_table('usuarios_table');
         }
 }
